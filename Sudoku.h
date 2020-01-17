@@ -37,7 +37,7 @@ void ChangeMap(char *rule) //进行变换
 			output[datacount++] = origin[((16 - j) / 2 + rule[i] - '0') % 9] + '0';
 		}
 		output[datacount++] = '\n';
-	}
+	} 
 }
 
 void BuildSudoku(char *rule1, char *rule2, char*rule3)
