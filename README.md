@@ -9,7 +9,7 @@ cmd命令行窗口中打开Sudoku.exe所在文件夹
 
 解决数独残局  
 cmd命令行窗口中打开Sudoku.exe所在文件夹  
-在窗口中输入 "Sudoke.exe -c FILE_PATH" FILE_PATH为数独残局文件所在路径，最好为绝对路径。  
+在窗口中输入 "Sudoke.exe -s FILE_PATH" FILE_PATH为数独残局文件所在路径，最好为绝对路径。  
 
 仅需执行Sudoke.cpp和Sudoku.h即可生成可执行文件。  
 注：visual studio2017会出现预编译（fopen_s报错）问题，解决方案是打开项目属性页，在C/C++选项中选择预处理器，并在右边的预处理器定义中加上 _CRT_SECURE_NO_WARNINGS （注意用分号隔开前面的定义）。  
