@@ -13,12 +13,15 @@
 #include "cstdlib"
 #include"Sudoku.h"
 using namespace std;
+bool success;
 int main(int argc, char** argv)
 {
 	int N = 0;
 	//scanf("%d",&N);
 	//FILE *fp1 = fopen(argv[2], "r");
-
+	success = argcCheck(argc);
+	if (success == false)
+		return 0;
 	if (argc == 3 && strcmp(argv[1], "-c") == 0)
 	{
 		int len = strlen(argv[2]);
@@ -39,7 +42,6 @@ int main(int argc, char** argv)
 		BuildMove(N);
 		print1();
 	}
-
 	else if (argc == 3 && strcmp(argv[1], "-s") == 0)
 	{
 		cout << argv[2] << endl;
@@ -48,4 +50,4 @@ int main(int argc, char** argv)
 
 	return 0;
 }
- 
+
