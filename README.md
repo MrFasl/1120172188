@@ -1,4 +1,4 @@
-# 1120172188  
+# 1120172188 郑子豪
 北京理工大学软件工程大作业（个人）  
 Sudoku.cpp为程序主程序，Sudoku.h为头文件SodoMaker.cpp和SodoSolve.cpp为前期试验代码，不参与工程。  
 
