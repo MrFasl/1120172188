@@ -15,8 +15,8 @@ cmd命令行窗口中打开Sudoku.exe所在文件夹
 注：visual studio2017会出现预编译问题，解决方案是打开项目属性页，在C/C++选项中选择预处理器，并在右边的预处理器定义中加上 _CRT_SECURE_NO_WARNINGS （注意用分号隔开前面的定义）。
 
 项目结构
-|——README.MD
-|——BIN
+|——README.MD \n
+|——BIN \n
 |   |——Sudoke.exe -可执行文件
 |   |——sudoku.txt—程序执行生成的数独终局存放文件
 |   |——questions.txt——数独残局1000个
