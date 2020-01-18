@@ -25,6 +25,14 @@ int p = 0;
 
 int vis[3][10][10];
 
+bool argcCheck(int argc)
+{
+	if (argc == 3)
+		return true;
+	else
+		return false;
+}
+
 void ChangeMap(char *rule) //进行变换
 {
 	for (int i = 0; i < 3; ++i)
@@ -37,7 +45,7 @@ void ChangeMap(char *rule) //进行变换
 			output[datacount++] = origin[((16 - j) / 2 + rule[i] - '0') % 9] + '0';
 		}
 		output[datacount++] = '\n';
-	} 
+	}
 }
 
 void BuildSudoku(char *rule1, char *rule2, char*rule3)
@@ -99,8 +107,8 @@ int judge(int s, int x, int y, int num)
 	return 1;
 }
 
-//以下位解数独 
-
+//以下为解数独 
+bool out;
 int res[9][9];
 int suc;
 char OutputData[200000000];
@@ -122,9 +130,12 @@ void prt()    //将结果输入大数组中
 				if (i != 8)
 					OutputData[p++] = '\n';
 			}
+			out = false;
 		}
 
 	}
+	out = true;
+
 }
 void SetVis(int r, int c, int num)  //第r行，第i列和对应九宫格中已经有数num，则使用该函数
 {
